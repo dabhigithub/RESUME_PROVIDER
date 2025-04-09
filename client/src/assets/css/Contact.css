@@ -1,0 +1,144 @@
+/* body {
+    background: #000;
+    line-height: 26px;
+    margin: 0;
+  }
+   */
+  .App {
+    height: 75vh;
+    margin-top: 15vh;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .formRow {
+    margin: 10px 0 20px 0;
+  }
+  
+  .formInput {
+    padding: 15px 10px;
+  }
+  
+  .errorMessage {
+    color: #f45532;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .submit-btn {
+    padding: 15px 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  @media (max-width: 768px) {
+    .submit-message {
+      width: 125px;
+      margin-left: 200px;
+    }
+  }
+
+/* Contact Page Styles */
+.contact-form-input {
+  transition: all 0.3s ease;
+}
+
+.contact-form-input:hover {
+  transform: translateY(-2px);
+}
+
+.contact-form-input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(26, 35, 126, 0.1);
+}
+
+.contact-info-card {
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(26, 35, 126, 0.2);
+}
+
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Map Container Animation */
+.map-container {
+  transition: all 0.3s ease;
+}
+
+.map-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(26, 35, 126, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .contact-form-input {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info-card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f7fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a237e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #283593;
+}
+
+/* Form Field Focus Animation */
+.MuiTextField-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1a237e;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover Animation */
+.MuiButton-contained {
+  transition: all 0.3s ease !important;
+}
+
+.MuiButton-contained:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(26, 35, 126, 0.2);
+}
+
+/* Snackbar Animation */
+.MuiSnackbar-root {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

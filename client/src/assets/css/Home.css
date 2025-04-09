@@ -1,0 +1,242 @@
+/* Hero Section */
+.hero {
+    background-color: #f5f9ff;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #233d7e10;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 0;
+}
+
+.hero-container {
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #233D7E;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: translateY(-10px);
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #233D7E;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+.feature-card {
+    padding: 30px;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f0f4ff;
+    margin-bottom: 20px;
+    color: #4760E5;
+}
+
+.feature-title {
+    font-weight: 600;
+    color: #233D7E;
+    margin-bottom: 15px;
+}
+
+.feature-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f5f9ff;
+}
+
+.testimonial-card {
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.cta-paper {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #f5f9ff;
+    background-image: linear-gradient(135deg, #f5f9ff 0%, #e6f0ff 100%);
+    box-shadow: 0 10px 30px rgba(35, 61, 126, 0.1);
+    text-align: center;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .features-section,
+    .testimonials-section,
+    .cta-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    .hero-subtitle {
+        text-align: center;
+    }
+    
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-image-container {
+        margin-top: 30px;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-btn {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-btn button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
