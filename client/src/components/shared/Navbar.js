@@ -26,7 +26,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <Link to="/">
-          <img src={Logo} className="nav-logo" alt="Logo" />
+          <div className="logo-container">
+            <img src={Logo} className="nav-logo" alt="Resume Provider" />
+          </div>
         </Link>
         <ul
           className={mobile ? "nav-links-mobile" : "nav-links"}

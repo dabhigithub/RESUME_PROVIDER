@@ -13,12 +13,28 @@ li {
     font-size: 30px;
 }
 
-.nav-logo {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    margin-top: 10px;
+.logo-container {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white; /* Ensures logo has clean background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+}
+
+.nav-logo {
+    height: auto;
+    width: auto;
+    max-height: 60px;
+    max-width: 200px;
+    cursor: pointer;
+    margin-top: 5px;
+    align-items: center;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast; /* Improves image clarity in Chrome */
+    image-rendering: crisp-edges; /* Improves image clarity in Firefox */
+    transform: translateZ(0); /* Helps with image rendering */
 }
 
 .nav-links {

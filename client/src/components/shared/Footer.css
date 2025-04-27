@@ -5,9 +5,28 @@
   border-top: 1px solid #e9ecef;
 }
 
-.footer-logo {
-  height: 50px;
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
   margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  max-width: fit-content;
+}
+
+.footer-logo {
+  height: auto;
+  width: auto;
+  max-height: 60px;
+  max-width: 200px;
+  margin-bottom: 15px;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast; /* Improves image clarity in Chrome */
+  image-rendering: crisp-edges; /* Improves image clarity in Firefox */
+  transform: translateZ(0); /* Helps with image rendering */
 }
 
 .company-name {

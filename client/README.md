@@ -68,3 +68,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Resume Provider - Enhanced Features
+
+## New Template & Output Format Features
+
+### Multiple Resume Templates
+The Resume Provider application now includes multiple template options for resume creation:
+
+1. **Modern** - Clean, modern design with centered header and section titles with bottom borders
+2. **Professional** - Two-column header format with left-bordered section titles for a corporate look
+3. **Creative** - Colorful gradient header with chip-style contact information for creative professionals
+4. **Minimal** - Super clean and minimalistic design with light typography and spacing
+
+Users can choose from these templates in the last step of the resume creation process, providing a visual preview of each style.
+
+### Multiple Output Formats
+The application now supports exporting resumes in multiple file formats:
+
+1. **PDF Format** - Professional-grade PDF for printing and formal submissions
+2. **Word Document (DOCX)** - Editable document format for further customization
+3. **Plain Text (TXT)** - Simple text format for pasting into online applications or emails
+
+## Required Dependencies for New Features
+
+To implement the new export features, you'll need to install the following libraries:
+
+```bash
+npm install html2canvas jspdf file-saver
+```
+
+### Library Purposes:
+- **html2canvas**: Captures the resume template as an image for PDF export
+- **jspdf**: Converts the captured image into a downloadable PDF document
+- **file-saver**: Provides cross-browser file saving functionality for DOCX and TXT formats
+
+## Implementation Details
+
+### Templates
+Templates are defined in the `CreateResume.js` component using a configuration array with color schemes and styling properties for each template variant. The templates are rendered conditionally based on the user's selection.
+
+### Export Functionality
+- **PDF Export**: Uses html2canvas to capture the resume DOM element, then creates a PDF using jsPDF
+- **DOCX Export**: Creates a simplified HTML document wrapped in a blob with Word-compatible formatting
+- **TXT Export**: Generates a plain text representation of the resume data with proper formatting and structure
+
+## Future Enhancements
+- Add more template designs with varied layouts and color schemes
+- Implement advanced PDF customization options (margins, paper size)
+- Provide template preview in a carousel format
+- Support for custom template color selection

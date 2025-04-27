@@ -18,9 +18,11 @@ const Footer = () => {
         <Grid container spacing={4} justifyContent="space-between">
           <Grid item xs={12} sm={6} md={4}>
             <Box className="footer-brand">
-              <img src={Logo} alt="Resume Builder Logo" className="footer-logo" />
+              <div className="logo-container">
+                <img src={Logo} alt="Resume Provider Logo" className="footer-logo" />
+              </div>
               <Typography variant="h6" className="company-name">
-                Resume Builder
+                Resume Provider
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
                 Create professional resumes in minutes with our easy-to-use builder.
