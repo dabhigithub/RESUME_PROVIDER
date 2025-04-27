@@ -59,7 +59,7 @@ const testimonials = [
     role: "Marketing Manager",
     avatar: "https://randomuser.me/api/portraits/women/32.jpg",
     rating: 5,
-    text: "Using this resume builder helped me land interviews at top companies. The templates are professional and easy to customize!"
+    text: "Using this resume provider helped me land interviews at top companies. The templates are professional and easy to customize!"
   },
   {
     name: "David Chen",
@@ -115,7 +115,7 @@ const Home = () => {
                   lineHeight: 1.6
                 }}
               >
-                Our resume builder takes the hassle out of resume writing. Stand out with professional templates and land your dream job.
+                Our resume provider takes the hassle out of resume writing. Stand out with professional templates and land your dream job.
               </Typography>
               <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
                 <Button 
@@ -172,7 +172,7 @@ const Home = () => {
               >
                 <img 
                   src={HeroImage} 
-                  alt="Resume Builder" 
+                  alt="Resume Provider" 
                   style={{ 
                     width: '100%',
                     borderRadius: 8,
@@ -198,7 +198,7 @@ const Home = () => {
               color: '#1a237e'
             }}
           >
-            Why Choose Our Resume Builder?
+            Why Choose Our Resume Provider?
           </Typography>
           <Typography 
             variant="h6" 

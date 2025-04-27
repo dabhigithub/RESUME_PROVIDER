@@ -25,7 +25,7 @@ const Footer = () => {
                 Resume Provider
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
-                Create professional resumes in minutes with our easy-to-use builder.
+                Create professional resumes in minutes with our easy-to-use provider.
                 Stand out from the crowd with modern templates.
               </Typography>
             </Box>
@@ -72,7 +72,7 @@ const Footer = () => {
         
         <Box className="footer-bottom">
           <Typography variant="body2" color="text.secondary">
-            &copy; {currentYear} Resume Builder. All rights reserved.
+            &copy; {currentYear} Resume Provider. All rights reserved.
           </Typography>
           <Box className="footer-legal-links">
             <Link href="#" underline="hover">Privacy Policy</Link>

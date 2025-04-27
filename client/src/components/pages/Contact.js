@@ -86,7 +86,7 @@ const Contact = () => {
               mx: 'auto'
             }}
           >
-            Have questions about our resume builder? We're here to help. Send us a message and we'll respond as soon as possible.
+            Have questions about our resume provider? We're here to help. Send us a message and we'll respond as soon as possible.
           </Typography>
         </Box>
 
@@ -143,7 +143,7 @@ const Contact = () => {
                       Email Address
                     </Typography>
                     <Typography variant="body1" sx={{ opacity: 0.9 }}>
-                      support@resumebuilder.com
+                      support@resumeprovider.com
                     </Typography>
                   </Box>
                 </Box>

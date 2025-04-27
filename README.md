@@ -1,4 +1,4 @@
-# Resume Builder
+# Resume Provider
 
 A modern, user-friendly web application that helps users create professional resumes quickly and easily. Built with React.js and Material-UI, this application provides a seamless experience for creating, customizing, and downloading resumes.
 
@@ -56,16 +56,16 @@ A modern, user-friendly web application that helps users create professional res
 ## Project Structure
 
 ```
-Resume-Builder/
+Resume-Provider/
 ├── client/                 # Frontend React application
 │   ├── public/            # Static files
 │   │   ├── assets/        # Images, fonts, and CSS
-│   │   ├── src/           # Source code
-│   │   │   ├── components/    # React components
-│   │   │   │   ├── pages/     # Page components
-│   │   │   │   └── shared/    # Shared components
-│   │   │   └── App.js         # Main application component
-│   │   └── package.json       # Frontend dependencies
+│   │   │   ├── src/           # Source code
+│   │   │   │   ├── components/    # React components
+│   │   │   │   │   ├── pages/     # Page components
+│   │   │   │   │   └── shared/    # Shared components
+│   │   │   │   └── App.js         # Main application component
+│   │   │   └── package.json       # Frontend dependencies
 │   └── server/                # Backend Node.js application
 │       ├── controllers/       # Route controllers
 │       ├── models/           # Database models
@@ -85,8 +85,8 @@ Resume-Builder/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/resume-builder.git
-cd resume-builder
+git clone https://github.com/yourusername/resume-provider.git
+cd resume-provider
 ```
 
 2. Install frontend dependencies:
@@ -175,9 +175,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any queries or support, please contact:
-- Email: support@resumebuilder.com
-- Website: www.resumebuilder.com
+- Email: support@resumeprovider.com
+- Website: www.resumeprovider.com
 
 ---
 
-Built with ❤️ by the Resume Builder Team
+Built with ❤️ by the Resume Provider Team

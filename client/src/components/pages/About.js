@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Abhishek Kumar",
     role: "CEO & Founder",
     avatar: AbhishekImage,
-    bio: "With over 15 years of experience in HR and recruitment, Abhishek founded Resume Builder to help job seekers create professional resumes that stand out."
+    bio: "With over 15 years of experience in HR and recruitment, Abhishek founded Resume Provider to help job seekers create professional resumes that stand out."
   },
   {
     name: "Aditya Raj",
@@ -77,7 +77,7 @@ const About = () => {
               textAlign: 'center'
             }}
           >
-            About Resume Builder
+            About Resume Provider
           </Typography>
           <Typography
             variant="h6"
